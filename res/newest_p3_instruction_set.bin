@@ -1,0 +1,956 @@
+25
+
+sec_0x0
+25000100;cmd_end;0;0x88378a8
+25000200;cmd_jmp;0;0x8837960;uint32_t_P;Jump destination
+25000300;cmd_call;0;0x88379c8;uint32_t_P;Jump destination
+25000400;cmd_result;0;0x8837a38;uint32_t_T1;Pointer 0
+25000500;cmd_resJmp;0;0x8837aa0;uint32_t_T1;Pointer 0;uint32_t_P;Jump destination
+25000600;cmd_resCall;0;0x8837b50;uint32_t_T1;Pointer 0;uint32_t_P;Jump destination
+25000700;cmd_mov;0;0x8837c08;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25000800;cmd_add;0;0x8837d18;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25000900;cmd_sub;0;0x8837eec;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25000a00;cmd_mul;0;0x883800c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25000b00;cmd_div;0;0x8838130;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25000c00;cmd_inc;0;0x883825c;uint32_t_T1;Pointer 0
+25000d00;cmd_dec;0;0x8838308;uint32_t_T1;Pointer 0
+25000e00;cmd_loop;0;0x88383b4;uint32_t_T1;Pointer 0;uint32_t_P;Jump destination
+25000f00;cmd_waitFrame;0;0x8838434;uint32_t_T1;Pointer 0
+25001000;cmd_waitTime;0;0x88384e0;uint32_t_T1;Pointer 0
+25001100;cmd_rand;0;0x88385e0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25001200;cmd_iand;0;0x883867c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25001300;cmd_ior;0;0x88386ec;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25001400;cmd_ixor;0;0x883875c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25001500;cmd_irol;0;0x88387cc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25001600;cmd_iror;0;0x883883c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25001700;cmd_ifEQ;0;0x88388ac;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25001800;cmd_ifNE;0;0x88389f0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25001900;cmd_ifLSE;0;0x8838b60;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25001a00;cmd_ifLBE;0;0x8838cd4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25001b00;cmd_ifLS;0;0x8838e48;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25001c00;cmd_ifLB;0;0x8838fbc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25001d00;cmd_ifAND;0;0x8839130;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25001e00;cmd_ifOR;0;0x8839204;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25001f00;cmd_ifCallEQ;0;0x88392d8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25002000;cmd_ifCallNE;0;0x883942c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25002100;cmd_ifCallLSE;0;0x88395ac;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25002200;cmd_ifCallLBE;0;0x8839730;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25002300;cmd_ifCallLS;0;0x88398b4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25002400;cmd_ifCallLB;0;0x8839a38;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25002500;cmd_ifCallAND;0;0x8839bbc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25002600;cmd_ifCallOR;0;0x8839c98;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25002700;cmd_flgSet;0;0x8839d74;COUNT_byte_uint32tP;Unknown (Byte)
+25002800;cmd_flgClr;0;0x8839e3c;COUNT_byte_uint32tP;Unknown (Byte)
+25002900;cmd_flgSetId;0;0x8839f08;uint32_t_T1;Pointer 0
+25002a00;cmd_flgClrId;0;0x8839f88;uint32_t_T1;Pointer 0
+25002b00;cmd_flgMov;0;0x883a00c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25002c00;cmd_flgAND;0;0x883a120;uint32_t_P;Jump destination;COUNT_byte_uint32tP;Unknown (Byte)
+25002d00;cmd_flgOR;0;0x883a22c;uint32_t_P;Jump destination;COUNT_byte_uint32tP;Unknown (Byte)
+25002e00;cmd_flgZERO;0;0x883a33c;uint32_t_P;Jump destination;COUNT_byte_uint32tP;Unknown (Byte)
+25002f00;cmd_inxJmp;0;0x883a44c;uint32_t_T1;Pointer 0
+25003000;cmd_stkDec;0;0x883a4c4
+25003100;cmd_stkClr;0;0x883a524
+25003200;cmd_break;0;0x883a568;uint32_t_T1;Pointer 0;string;Text
+25003300;cmd_string;0;0x883a5b4;string;Text
+25003400;cmd_print;0;0x883a5ec;string;Text;uintX_t_T1;Pointer 0
+25003500;cmd_textOut;0;0x883a650;uint32_t_T1;Pointer 0
+25003600;cmd_setSleep;0;0x883a69c;uint32_t_T1;Pointer 0
+25003700;cmd_sinf;0;0x883a6ec;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25003800;cmd_cosf;0;0x883a7b0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25003900;cmd_atan2f;0;0x883a874;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25003a00;cmd_abs;0;0x883a92c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25003b00;cmd_sqrt;0;0x883aa04;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25003c00;cmd_setLabelId;0;0x883aaa0;uint32_t_T1;Pointer 0;uint32_t_P;Jump destination
+25003d00;cmd_callLabelId;0;0x883ab6c;uint32_t_T1;Pointer 0
+25003e00;cmd_jmpLabelId;0;0x883ab10;uint32_t_T1;Pointer 0
+25003f00;cmd_callLabel;0;0x883ac38;uint32_t_T1;Pointer 0
+25004000;cmd_jmpLabel;0;0x883abe8;uint32_t_T1;Pointer 0
+25004100;cmd_mod;0;0x8837e38;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25004200;cmd_memset;0;0x883ac9c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25004300;cmd_memcpy;0;0x883ade4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25004400;cmd_flgMemset;0;0x883ae78;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25004500;cmd_flgMemcpy;0;0x883af88;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25004600;cmd_stringEnable;0;0x883b0b0;uint32_t_T1;Pointer 0
+25004700;cmd_srand;0;0x883b104
+25004800;cmd_initArray;0;0x883b150
+25004900;cmd_addArray;0;0x883b18c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25004a00;cmd_setArray;0;0x883b210;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25004b00;cmd_getArray;0;0x883b350;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25004c00;cmd_F32toF16;0;0x883b474;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25004d00;cmd_F16toF32;0;0x883b540;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25004e00;cmd_getElapsedTime;0;0x883b5e8;uint32_t_T1;Pointer 0
+
+sec_0x3
+25030100;setChoice;0;0x892c72c;string;Text;uintX_t;Pointer 0
+25030200;doSelect;0;0x892cb68;uint32_t_P;Number 1;uint32_t_P;Number 2
+25030300;createWindow;0;0x892bbcc
+25030400;sysytemMessage;0;0x892bbd8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_P;Jump destination
+25030500;sysytemMessageDirectLocalizeCategory;0;0x892c388;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25030600;messageClose;0;0x892c5f4
+25030700;setMessageColor;0;0x892c654;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25030800;doSelectCursor;0;0x892d058;uint32_t_P;Jump destination;uint32_t_T1;Pointer 0
+25030900;setRenderPriority;0;0x892d4c8;uint32_t_T1;Pointer 0
+25030a00;colorKeywordClear;0;0x892d540
+25030b00;colorKeywordAdd;0;0x892d588;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25030c00;colorKeywordDis;0;0x892d6d0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25030d00;showDialogEx;0;0x892d788;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_P;Jump destination;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;COUNT_uint32tP_uint32tP;Pointer 7
+25030e00;closeDialog;0;0x892dee0
+25030f00;setDialogInformationEx;0;0x892df88;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;COUNT_uint32tP_uint32tP;Pointer 4
+25031000;setPosition;0;0x892e1e0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25031100;getLinefeedCount;0;0x892e268;uint32_t_T1;Pointer 0
+
+sec_0x8
+25080100;dummy;0;0x896e7fc
+25080200;beginAppearItem;0;0x896e808;uint32_t_T1;Pointer 0
+25080300;setAppearItem;0;0x896e890;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25080400;endAppearItem;0;0x896eb90
+25080500;getAppearItem;0;0x896ebf4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25080600;getAppearItemEx;0;0x896ed04;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25080700;itemTableAllClear;0;0x896ee64
+25080800;setCharinAppearParam;0;0x896e9a8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25080900;setAppearItemKillTime;0;0x896eae4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+
+sec_0x9
+25090100;dummy;0;0x89489d8
+25090200;getPadDirect;0;0x89489e4;uint32_t_T1;Pointer 0
+25090300;getPadStand;0;0x8948a84;uint32_t_T1;Pointer 0
+25090400;getPadRelease;0;0x8948b24;uint32_t_T1;Pointer 0
+25090500;cmd_string;0;0x8948bc4;uint32_t_T1;Pointer 0;string;Text
+25090600;cmd_print;0;0x8948c10;uint32_t_T1;Pointer 0;string;Text;uintX_t_T1;Pointer 1
+25090700;dsp_string;0;0x8948c88;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;string;Text
+25090800;dsp_print;0;0x8948cfc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;string;Text;uintX_t_T1;Pointer 3
+25090900;readArcFile;0;0x8948d9c;uint32_t_T1;Pointer 0;string;Text
+25090a00;syncReadArcFile;0;0x8948f30;uint32_t_T1;Pointer 0;string;Text
+25090b00;isReading;0;0x894900c;uint32_t_T1;Pointer 0
+25090c00;clearLoadingGroup;0;0x8949074;uint32_t_T1;Pointer 0
+25090d00;setDisableBacklightOff;0;0x89490d4;uint32_t_T1;Pointer 0
+25090e00;setCpuClockMode;0;0x8949138;uint32_t_T1;Pointer 0
+25090f00;readCacheFile;0;0x8949198;uint32_t_T1;Pointer 0;string;Text
+25091000;getArray;0;0x8949244;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25091100;waitReading;0;0x894935c
+
+sec_0xa
+250a0100;callScript;0;0x89496bc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a0200;changeScene;0;0x8949710;uint32_t_T1;Pointer 0
+250a0300;exitOrder;0;0x8949774
+250a0400;changeLanguage;0;0x8949794;uint32_t_T1;Pointer 0
+250a0500;getLaboInfo;0;0x89497ec;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a0600;setLaboInfo;0;0x89499b0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a0700;getGfpData;0;0x8949ad4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+250a0800;serchGfpId;0;0x8949c30;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+250a0900;addItem;0;0x8949dfc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a0a00;addCharin;0;0x8949e8c;uint32_t_T1;Pointer 0
+250a0b00;getItem;0;0x8949ef4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a0c00;clearItem;0;0x8949fac;uint32_t_T1;Pointer 0
+250a0d00;clearIsFirst;0;0x894a014;uint32_t_T1;Pointer 0
+250a0e00;getMaterialItemId;0;0x894a10c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+250a0f00;setSquadData;0;0x894a1bc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+250a1000;setClassData;0;0x894a28c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+250a1100;setUnitData;0;0x894a468;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+250a1200;getPlayerData;0;0x894a5bc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+250a1300;setPlayerData;0;0x894a6cc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+250a1400;setAccessoryIdFileIndex;0;0x894a7dc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a1500;checkEqualHeroName;0;0x894a874;uint32_t_T1;Pointer 0;string;Text
+250a1600;checkUnkoName;0;0x894a96c;uint32_t_T1;Pointer 0;string;Text
+250a1700;requestActor;0;0x894aab8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+250a1800;requestExpandParam;0;0x894ac88;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a1900;addQuestCompensationData;0;0x894af38;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+250a1a00;setTimmingScript;0;0x894b030;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+250a1b00;setMssionBgmId;0;0x894b104;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a1c00;getGameMode;0;0x894b1a4;uint32_t_T1;Pointer 0
+250a1d00;setGameMode;0;0x894b204;uint32_t_T1;Pointer 0
+250a1e00;gotoMission;0;0x894b3f8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+250a1f00;resetTips;0;0x894b504;uint32_t_T1;Pointer 0
+250a2000;getMissionInfo;0;0x894b568;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+250a2100;callSysMsg;0;0x894b668;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+250a2200;callSysMsgLabel;0;0x894b76c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+250a2300;clearSysMsg;0;0x894b888
+250a2400;setSoundDisableRhtymHit;0;0x894b8c8;uint32_t_T1;Pointer 0
+250a2500;setSoundFixBeat;0;0x894b93c;uint32_t_T1;Pointer 0
+250a2600;isSoundDisableRhtymHit;0;0x894b9a4;uint32_t_T1;Pointer 0
+250a2700;isSoundFixBeat;0;0x894ba20;uint32_t_T1;Pointer 0
+250a2800;setTipsImageId;0;0x894ba90;uint32_t_T1;Pointer 0
+250a2900;checkTipsUnlock;0;0x894baf0;COUNT_byte_uint32tP;Unknown (Byte)
+250a2a00;unlockTipsImageId;0;0x894bc10;uint32_t_T1;Pointer 0
+250a2b00;unlockTipsImageNoSave;0;0x894bcd8
+250a2c00;clearTipsSelectMask;0;0x894bd18
+250a2d00;fillTipsSelectMask;0;0x894bd60
+250a2e00;setTipsSelectMask;0;0x894bda8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a2f00;setTipsSelectMaskMulti;0;0x894be70;uint32_t_T1;Pointer 0;COUNT_byte_uint32tP;Unknown (Byte)
+250a3000;saveFlag;0;0x894bf84
+250a3100;loadFlag;0;0x894bfc4
+250a3200;multi_clearTweet;0;0x894c99c
+250a3300;multi_setTweet;0;0x894c9e8;uint32_t_T1;Pointer 0
+250a3400;multi_getTweet;0;0x894ca70;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a3500;multi_getRoundTripTime;0;0x894cb08;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a3600;text_setReplaceText;0;0x894cbb4;uint32_t_T1;Pointer 0;uint32_t_P;Jump destination
+250a3700;text_setReplaceColor;0;0x894cc70;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+250a3800;debugSoundPan;0;0x894cdd8;uint32_t_T1;Pointer 0
+250a3900;saveQuestCompleteCounter;0;0x894ce28
+250a3a00;loadQuestCompleteCounter;0;0x894ce64
+250a3b00;getQuestCompleteCounter;0;0x894cea0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a3c00;incQuestCompleteCounter;0;0x894cf34;uint32_t_T1;Pointer 0
+250a3d00;unlockShopItem;0;0x894cfb4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a3e00;checkShopItemUnlock;0;0x894d07c;uint32_t_T1;Pointer 0;COUNT_byte_uint32tP;Unknown (Byte)
+250a3f00;unlockTeamCard;0;0x894d1b8;uint32_t_T1;Pointer 0
+250a4000;unlockTeamFlag;0;0x894d228;uint32_t_T1;Pointer 0
+250a4100;unlockBGM;0;0x894d298;uint32_t_T1;Pointer 0
+250a4200;getTalkFlag;0;0x894d304;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a4300;unlockMedenShopItem;0;0x894d40c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+250a4400;clearMedenShopItem;0;0x894d4b4
+250a4500;setReplaceTextFromInt;0;0x894d51c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a4600;setKnownItem;0;0x894a07c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250a4700;getUnitParam;0;0x894d62c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+250a4800;enumEquipItem;0;0x894d708;uint32_t_T1;Pointer 0
+250a4900;getEquipItemParam;0;0x894d77c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+
+sec_0xb
+250b0100;playSe;0;0x896f6e4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+250b0200;playAtrac;0;0x896f7fc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+250b0300;stop;0;0x896f918;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+250b0400;cancel;0;0x896f9c0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+250b0500;volume;0;0x896fa68;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+250b0600;pan;0;0x896fb34;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+250b0700;allReset;0;0x896fbe4
+250b0800;playSeFromPos;0;0x896fc18;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7
+250b0900;calcVolumeRate;0;0x896fe60;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+
+sec_0xc
+250c0100;getCommandId;0;0x8970160;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c0200;getHitRate;0;0x8970288;uint32_t_T1;Pointer 0
+250c0300;getCommandRate;0;0x8970320;uint32_t_T1;Pointer 0
+250c0400;getHitPercussion;0;0x8970404;uint32_t_T1;Pointer 0
+250c0500;isRhythm;0;0x8970498;uint32_t_T1;Pointer 0
+250c0600;getPos;0;0x897054c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c0700;setDisableKey;0;0x897062c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c0800;sendMiss;0;0x89706cc;uint32_t_T1;Pointer 0
+250c0900;getDisableKey;0;0x8970730;uint32_t_T1;Pointer 0
+250c0a00;setDisableBeatGuide;0;0x8970798;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c0b00;getDisableBeatGuide;0;0x8970838;uint32_t_T1;Pointer 0
+250c0c00;sendCommand;0;0x89708b0;uint32_t_T1;Pointer 0
+250c0d00;setAutoCommand;0;0x8970914;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c0e00;clearAutoCommand;0;0x8970a18
+250c0f00;addAutoCommandKey;0;0x8970a58;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+250c1000;startAutoCommandKey;0;0x8970b04;uint32_t_T1;Pointer 0
+250c1100;getSynchroPoint;0;0x8970b6c;uint32_t_T1;Pointer 0
+250c1200;getCombo;0;0x8970bd4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c1300;getCommandScore;0;0x8970c80;uint32_t_T1;Pointer 0
+250c1400;getHeroCount;0;0x8970ce4;uint32_t_T1;Pointer 0
+250c1500;getSoundLevel;0;0x8970d48;uint32_t_T1;Pointer 0
+250c1600;isHeroMode;0;0x8970dac;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c1700;isSummonMode;0;0x8970e20;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c1800;setDisablePercussionFlag;0;0x8970ee8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c1900;clearDisablePercussionFlag;0;0x8970f54;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c1a00;getDisablePercussionFlag;0;0x8970fc0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c1b00;setDisablePercussionView;0;0x8971030;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c1c00;clearDisablePercussionView;0;0x89710b8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c1d00;getDisablePercussionView;0;0x8971140;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c1e00;start;0;0x89711d8;uint32_t_T1;Pointer 0
+250c1f00;stop;0;0x897128c;uint32_t_T1;Pointer 0
+250c2000;setDisableCommandGuide;0;0x89712fc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c2100;getDisableGuide;0;0x897139c;uint32_t_T1;Pointer 0
+250c2200;setImitationSoundPosition;0;0x89713e0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c2300;setDisableHeroVoice;0;0x897148c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c2400;clearDisableHeroVoice;0;0x8971514;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c2500;setEnableRhythmHit;0;0x89715a0;uint32_t_T1;Pointer 0
+250c2600;isEnableRhythmHit;0;0x89715f0;uint32_t_T1;Pointer 0
+250c2700;setEnemySummonType;0;0x897163c;uint32_t_T1;Pointer 0
+250c2800;startSummonMode;0;0x8971704;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+250c2900;setDisableFeverGauge;0;0x89717a8;uint32_t_T1;Pointer 0
+250c2a00;setFeverGaugePriority;0;0x89717fc;uint32_t_T1;Pointer 0
+250c2b00;getFeverGaugePriority;0;0x8971874;uint32_t_T1;Pointer 0
+250c2c00;getEquipSummonType;0;0x89718f4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+
+sec_0x10
+25100100;dummy;0;0x8909e98
+25100200;setScriptLabelTable;0;0x8909ea4;uint32_t_P;Jump destination
+25100300;callScriptLabel;0;0x890a1d8;uint32_t_P;Jump destination;uint32_t_T1;Pointer 1
+25100400;callScriptLabelId;0;0x890a22c;uint32_t_T1;Pointer 1;uint32_t_T2;Pointer 2
+25100500;setCommandMonitor;0;0x8909f04;uint32_t_T1;Pointer 1;uint32_t_T2;Pointer 2
+25100600;getPack;0;0x8909f58;uint32_t_T1;Pointer 1
+25100700;labelToInt;0;0x8909fc4;uint32_t_T1;Pointer 1;uint32_t_P;Jump destination
+25100800;createScript;0;0x890a044;uint32_t_T1;Pointer 1;uint32_t_T2;Pointer 2;uint32_t_T3;Pointer 3;uint32_t_T4;Pointer 4;uint32_t_T5;Pointer 5;uint32_t_T6;Pointer 6
+25100900;setGroupId;0;0x890a280;uint32_t_T1;Pointer 1
+25100a00;getGroupId;0;0x890a2e0;uint32_t_T1;Pointer 1
+25100b00;getParentGroupId;0;0x890a348;uint32_t_T1;Pointer 1
+25100c00;killChildren;0;0x890a3bc
+25100d00;killScript;0;0x890a408;uint32_t_T1;Pointer 1
+25100e00;setAddress;0;0x890a474;uint32_t_T1;Pointer 1;uint32_t_T2;Pointer 2
+25100f00;setLocalValue;0;0x890a50c;uint32_t_T1;Pointer 1;uint32_t_T2;Pointer 2;uint32_t_T3;Pointer 3
+25101000;getLocalValue;0;0x890a678;uint32_t_T1;Pointer 1;uint32_t_T2;Pointer 2;uint32_t_T3;Pointer 3
+
+sec_0x12
+25120100;dummy;0;0x8a1d024
+25120200;setMissionTimmingScript;0;0x8a1d030;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25120300;setMaxMissionAreaId;0;0x8a1d124;uint32_t_T1;Pointer 0
+25120400;getMaxMissionAreaId;0;0x8a1d184;uint32_t_T1;Pointer 0
+25120500;restartMission;0;0x8a1d1e4;uint32_t_T1;Pointer 0
+25120600;getMissionAreaId;0;0x8a1d25c;uint32_t_T1;Pointer 0
+25120700;setMissionAreaId;0;0x8a1d2bc;uint32_t_T1;Pointer 0
+25120800;getQuestId;0;0x8a1d31c;uint32_t_T1;Pointer 0
+25120900;getWeatherInfo;0;0x8a1d37c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25120a00;createScript;0;0x8a1d404;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+
+sec_0x13
+25130100;dummy;1;0x8ac0b10
+25130200;setTitleTimmingScript;1;0x8ac0b20;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+
+sec_0x16
+25160100;dummy;0;0x8919078
+25160200;getPack;0;0x8919084;uint32_t_T1;Pointer 0;string;Text
+25160300;callActorScript;0;0x8919120;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25160400;getWorldInfo;0;0x891921c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25160500;setWorldInfo;0;0x89192b0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25160600;addGimmick;0;0x8919324;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25160700;addGimmickModelName;0;0x891940c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;string;Text
+25160800;addEffect;0;0x8919610;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25160900;setEffectTimmingScript;0;0x8919744;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25160a00;setGimmickTimmingScript;0;0x8919814;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25160b00;setMotionEventTimmingScript;0;0x89198e4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25160c00;setHitEffectScript;0;0x89199b4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25160d00;multiSetMultiParam;0;0x8919d2c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25160e00;multiAddMapIcon;0;0x8919a64;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25160f00;multiAddMapUnit;0;0x8919e10;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25161000;multiSetScore;0;0x8919e98;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25161100;multiGetScore;0;0x8919ffc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25161200;addGimmickPowerGauge;0;0x891a238;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7
+25161300;getGimmickPowerGaugePoint;0;0x891a418;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25161400;multiSetTime;0;0x891a08c;uint32_t_T1;Pointer 0
+25161500;multiGetTime;0;0x891a0f0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25161600;multiPauseTime;0;0x891a1b0;uint32_t_T1;Pointer 0
+25161700;resultGetState;0;0x891a568;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25161800;resultGetChangeParam;0;0x891a64c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25161900;resultSetState;0;0x891a720;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;string;Text
+25161a00;resultGetChange;0;0x891a970;uint32_t_T1;Pointer 0
+25161b00;getUnitParam;0;0x891a9d0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25161c00;setVersusRule;0;0x891ab18;uint32_t_T1;Pointer 0
+25161d00;getStageRuleParam;0;0x891ab78;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25161e00;getStageGimmickParam;0;0x891ac50;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25161f00;addTroop;0;0x891b8dc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25162000;setAppearancePosition;0;0x891b99c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25162100;setRebornPosition;0;0x891ba34;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25162200;addSquad;0;0x891bacc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25162300;setSquadActivity;0;0x891bb98;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162400;addChara;0;0x891bc80;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162500;setClassMaskId;0;0x891bd68;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25162600;getUnitMotionIndex;0;0x891be1c;uint32_t_T1;Pointer 0
+25162700;setUnitMotionIndex;0;0x891bea8;uint32_t_T1;Pointer 0
+25162800;clearUnit;0;0x891bf74
+25162900;setAttackSoundResponse;0;0x891c00c;uint32_t_T1;Pointer 0
+25162a00;addEquip;0;0x891c06c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25162b00;addEquipSubModel;0;0x891c130;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162c00;isEquipWeaponInTroop;0;0x891c214;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162d00;addSkill;0;0x891c500;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25162e00;isRegisterSkill;0;0x891c5b8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162f00;setSuperHero;0;0x891ca1c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163000;setPlayerId;0;0x891cb04;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163100;applyUnit;0;0x891cbbc
+25163200;readFileUnit;0;0x891cc20
+25163300;setupUnit;0;0x891cc84
+25163400;getTroopTopPosX;0;0x891cde4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163500;getHataPonHandle;0;0x891ced8;uint32_t_T1;Pointer 0
+25163600;getAliveUnitCount;0;0x891cf94;uint32_t_T1;Pointer 0
+25163700;getUnitSquadHandle;0;0x891d040;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163800;getUnitSquadHandleFromChara;0;0x891d100;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163900;getPlayerSquadHandle;0;0x891d1bc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163a00;getMultiPlayerSquadHandle;0;0x891d458;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25163b00;getMultiPlayerSquadHandle_PID;0;0x891d558;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163c00;setSquadRenderPriority;0;0x891d664;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163d00;getUnitHandle;0;0x891d7f4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25163e00;setUnitCtrlEnable;0;0x891d928;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163f00;getEthnicId;0;0x891d9e4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164000;getPlayerTroopBasePosition;0;0x891daec;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164100;setSquadBasePosition;0;0x891dc68;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164200;getSquadBasePosition;0;0x891de1c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164300;setFlagUnitBasePosition;0;0x891ded8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164400;setPlayerSquadType;0;0x891e080;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164500;calcCommonParam;0;0x891e180;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164600;eraseSquad;0;0x891e23c;uint32_t_T1;Pointer 0
+25164700;setAdvanceEnable;0;0x891e2cc;uint32_t_T1;Pointer 0
+25164800;setAdvanceSpeedRatio;0;0x891e378;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164900;setMoveSpeedRatio;0;0x891e444;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164a00;getMoveSpeedRatio;0;0x891e504;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164b00;setMagic;0;0x891e5c8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25164c00;recoveryPlayerTroopHP;0;0x891e6ac
+25164d00;recoveryPlayerTroopHPRatio;0;0x891e728;uint32_t_T1;Pointer 0
+25164e00;recoveryHP;0;0x891e7d0;uint32_t_T1;Pointer 0
+25164f00;recoveryHPRatio;0;0x891e8ac;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25165000;rebornTroop;0;0x891e9a0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25165100;getPlayerClassId;0;0x891eda0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25165200;getPlayerSuperHeroClassMaskId;0;0x891ef1c;uint32_t_T1;Pointer 0
+25165300;getPlayerClassLevel;0;0x891f004;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25165400;setSuperHeroRebornEnable;0;0x891f2ac;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25165500;isInsideRange;0;0x891f5a8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25165600;createChangeModel;0;0x891f7ec;uint32_t_T1;Pointer 0;string;Text
+25165700;changeModel;0;0x891f8c0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25165800;setCameraPosition;0;0x891f97c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25165900;addItemEffect;0;0x891fa48;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6
+25165a00;addCharinEffect;0;0x891fbd8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7
+25165b00;startSetupStage;0;0x891fd68;uint32_t_T1;Pointer 0
+25165c00;endSetupStage;0;0x891fdc4
+25165d00;addStage;0;0x891fdfc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;string;Text
+25165e00;setStageParam;0;0x891ff20;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;string;Text
+25165f00;applyStage;0;0x8920078;uint32_t_T1;Pointer 0
+25166000;disableRetireBox;0;0x89200ec;uint32_t_T1;Pointer 0
+25166100;addItem;0;0x8920154;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25166200;decItem;0;0x89202f0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25166300;getItem;0;0x8920374;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25166400;setMarchWayTypeReverce;0;0x89203fc;uint32_t_T1;Pointer 0
+25166500;setupStartDungeonWall;0;0x8920464
+25166600;setupAddDungeonWall;0;0x89204a4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25166700;setupEndDungeonWall;0;0x8920530
+25166800;resultBoxItemLabel;0;0x8920570;uint32_t_T1;Pointer 0
+25166900;resultBoxItemGet;0;0x89205e8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25166a00;resultBoxItemSet;0;0x8920690;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25166b00;startGame;0;0x8920714
+25166c00;endGame;0;0x8920750
+25166d00;isStartBattle;0;0x892078c;uint32_t_T1;Pointer 0
+25166e00;isGoGame;0;0x892080c;uint32_t_T1;Pointer 0
+25166f00;isLoadEnd;0;0x8920870;uint32_t_T1;Pointer 0
+25167000;setWindDirection;0;0x89208ec;uint32_t_T1;Pointer 0
+25167100;setWindLevel;0;0x8920998;uint32_t_T1;Pointer 0
+25167200;setRainLevel;0;0x8920a6c;uint32_t_T1;Pointer 0
+25167300;setSnowLevel;0;0x8920af8;uint32_t_T1;Pointer 0
+25167400;setCloudyLevel;0;0x8920b84;uint32_t_T1;Pointer 0
+25167500;setThunderLevel;0;0x8920c10;uint32_t_T1;Pointer 0
+25167600;setFogLeve;0;0x8920c9c;uint32_t_T1;Pointer 0
+25167700;setSandLevel;0;0x8920d40;uint32_t_T1;Pointer 0
+25167800;reflectWeather;0;0x8920e04;uint32_t_T1;Pointer 0
+25167900;setFogAlphaParam;0;0x8920e90;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25167a00;clearWeather;0;0x8920fb0
+25167b00;getWindDirection;0;0x8921014;uint32_t_T1;Pointer 0
+25167c00;getWindLevel;0;0x89210a4;uint32_t_T1;Pointer 0
+25167d00;getRainLevel;0;0x8921130;uint32_t_T1;Pointer 0
+25167e00;getSnowLevel;0;0x89211bc;uint32_t_T1;Pointer 0
+25167f00;getCloudyLevel;0;0x8921248;uint32_t_T1;Pointer 0
+25168000;getThunderLevel;0;0x89212d4;uint32_t_T1;Pointer 0
+25168100;getFogLevel;0;0x8921360;uint32_t_T1;Pointer 0
+25168200;getSandLevel;0;0x89213ec;uint32_t_T1;Pointer 0
+25168300;setCameraSight;0;0x8921478;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25168400;getCameraSightParam;0;0x8921500;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25168500;setStagePriority;0;0x89215a0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;string;Text
+25168600;startFade;0;0x8921688;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25168700;getFadeRate;0;0x89217f8;uint32_t_T1;Pointer 0
+25168800;getFadeColor;0;0x892186c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25168900;cameraSetScriptCmaera;0;0x892196c;uint32_t_T1;Pointer 0
+25168a00;cameraEnableControll;0;0x89219f0;uint32_t_T1;Pointer 0
+25168b00;cameraMoveType;0;0x8921a78;uint32_t_T1;Pointer 0
+25168c00;cameraMoveTimeSet;0;0x8921acc;uint32_t_T1;Pointer 0
+25168d00;cameraMoveSpeedSet;0;0x8921b20;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25168e00;cameraMove;0;0x8921bc4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25168f00;cameraGetPos;0;0x8921d48;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25169000;cameraGetPosX;0;0x8921e8c;uint32_t_T1;Pointer 0
+25169100;cameraSetOffsetY;0;0x8921f10;uint32_t_T1;Pointer 0
+25169200;cameraGetOffsetY;0;0x8921f98;uint32_t_T1;Pointer 0
+25169300;cameraActuate;0;0x892201c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25169400;cameraSetDefaultBattle;0;0x892218c
+25169500;cameraSetBattleZ;0;0x89221f8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25169600;cameraSetBattleAngle;0;0x89222a0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25169700;setDisableSquadHpgaugeView;0;0x8922490;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25169800;setDisableSimpleHpgaugeView;0;0x8922348;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25169900;setDisableHpgaugeView;0;0x89223e0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25169a00;getDisableHpgaugeView;0;0x892254c;uint32_t_T1;Pointer 0
+25169b00;setEnableLogWindow;0;0x891acec;uint32_t_T1;Pointer 0
+25169c00;setEnableChatWindow;0;0x891ad6c;uint32_t_T1;Pointer 0
+25169d00;startTimer;0;0x89225d4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25169e00;addTimer;0;0x89226b0;uint32_t_T1;Pointer 0
+25169f00;setTimerPos;0;0x8922734;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516a000;setTimerSize;0;0x89227e8;uint32_t_T1;Pointer 0
+2516a100;getTimerSec;0;0x8922878;uint32_t_T1;Pointer 0
+2516a200;setTimerPause;0;0x8922910;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516a300;setMsgWndRender;0;0x89229c4;uint32_t_T1;Pointer 0
+2516a400;setQuestLevel;0;0x8922a50;uint32_t_T1;Pointer 0
+2516a500;getQuestLevel;0;0x8922ab0;uint32_t_T1;Pointer 0
+2516a600;setQuestLevelRevise;0;0x8922b10;uint32_t_T1;Pointer 0
+2516a700;getQuestLevelRevise;0;0x8922b70;uint32_t_T1;Pointer 0
+2516a800;getPlayerSight;0;0x8922bd0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516a900;screenStartFrame;0;0x8922e24;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7;uint32_t_T9;Pointer 8;uint32_t_T10;Pointer 9
+2516aa00;screenStartSpotLight;0;0x892303c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7;uint32_t_T9;Pointer 8
+2516ab00;resultLevelupCalacLabel;0;0x892322c;uint32_t_T1;Pointer 0
+2516ac00;resultLevelupCalacGet;0;0x892328c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516ad00;resultLevelupCalacSet;0;0x8923340;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516ae00;setGroundOffset;0;0x89233f4;uint32_t_T1;Pointer 0
+2516af00;setSoundLevelCalacCallback;0;0x892349c;uint32_t_T1;Pointer 0
+2516b000;multi_waitTimeSync;0;0x891adec
+2516b100;multi_waitGoAhead;0;0x891b04c
+2516b200;multi_waitGoAhead1;0;0x891b054
+2516b300;multi_waitGoAhead2;0;0x891b05c
+2516b400;multi_waitGoAhead3;0;0x891b064
+2516b500;multi_waitActiveGenerator;0;0x891b1c8;uint32_t_T1;Pointer 0
+2516b600;multi_battleGoAHead;0;0x891b06c
+2516b700;multi_isWaitSync;0;0x891b3e0;uint32_t_T1;Pointer 0
+2516b800;getSquadClassId;0;0x89234fc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516b900;isPlayerEquipWeaponCategory;0;0x89235c8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516ba00;cameraSetControlLimit;0;0x8923a00;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516bb00;cameraEnableControl;0;0x8923ae4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516bc00;resetGateInfo;0;0x8923b90
+2516bd00;setGateInfo;0;0x8923bc8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+2516be00;getGateInfo;0;0x8923ce0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+2516bf00;registConstGimmick;0;0x8923ddc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7;uint32_t_T9;Pointer 8;uint32_t_T10;Pointer 9;uint32_t_T11;Pointer 10
+2516c000;applyConstGimmick;0;0x8923fa8
+2516c100;enableCollisionConstGimmick;0;0x8923fe4;uint32_t_T1;Pointer 0
+2516c200;sendVersusGoal;0;0x8924044;uint32_t_T1;Pointer 0
+2516c300;isUpdateVersusGoal;0;0x89240a4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516c400;getPlayerVersusGoal;0;0x8924130;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516c500;sendVersus03EnemyCtrl;0;0x89241d0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+2516c600;receiveVersus03EnemyCtrl;0;0x89242d0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+2516c700;sendVersus03LastOneGoal;0;0x89243f4;uint32_t_T1;Pointer 0
+2516c800;receiveVersus03LastOneGoal;0;0x8924490;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516c900;sendVersus02MissileInfo;0;0x8924544;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+2516ca00;receiveVersus02MissileInfo;0;0x8924690;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+2516cb00;sendVersus02EnemyCtrl;0;0x8924804;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+2516cc00;receiveVersus02EnemyCtrl;0;0x8924904;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+2516cd00;getPlayerId;0;0x892570c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516ce00;getTroopTopPosX_Enemy;0;0x89257c8;uint32_t_T1;Pointer 0
+2516cf00;getSquad_playerId;0;0x8925880;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516d000;getTroopType_GimmickUID;0;0x89259f0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516d100;setEffectTargetMask;0;0x8925a90;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6
+2516d200;getDamageCount_GimmickUID;0;0x8925c5c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516d300;changePhase_GimmickUID;0;0x8925cfc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516d400;resetQuestPay;0;0x8925f18
+2516d500;setQuestPayItem;0;0x8925f6c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+2516d600;setQuestPayExp;0;0x8926068;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516d700;setUnitCtrlActivity;0;0x8926100;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516d800;setUnitCtrlCurrentActType;0;0x89261dc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516d900;setMultimapViewState;0;0x8926294;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516da00;setUnitDeadMotion;0;0x8926384;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516db00;getGeneratorInfo;0;0x892643c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516dc00;setNoTrespassing;0;0x89236b4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516dd00;setDisableInvalidNoTrespassing;0;0x8923774;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516de00;setFrontLineDetectForce;0;0x8923824;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516df00;getSymbolMarkId;0;0x892652c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516e000;readSymbolMarkFile;0;0x892663c;uint32_t_T1;Pointer 0
+2516e100;addSybolMarkGimmick;0;0x8926740;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+2516e200;setWindColor;0;0x89268c8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+2516e300;multi_startNosyncEvent;0;0x891b4ec
+2516e400;multi_endNosyncEvent;0;0x891b5a4
+2516e500;multi_startGoAhead;0;0x891b608
+2516e600;multi_stopGoAhead;0;0x891b724
+2516e700;multi_isFinishGoAhead;0;0x891b7c8;uint32_t_T1;Pointer 0
+2516e800;networkErrorInvoke;0;0x891b89c
+2516e900;sendVersus04KnockOutInfo;0;0x8924a28
+2516ea00;receiveVersus04KnockOutInfo;0;0x8924a9c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516eb00;resultGetPhase;0;0x8926a00;uint32_t_T1;Pointer 0
+2516ec00;setupDungeonComment;0;0x8926a78;uint32_t_P;Jump destination
+2516ed00;getUnitInfo_UnitUID;0;0x8925da0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+2516ee00;setVersusStatusFlag;0;0x8925250;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516ef00;getVersusRandIndex;0;0x892531c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7;uint32_t_T9;Pointer 8
+2516f000;getUnitHandle_TroopTopPos;0;0x8926b20;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516f100;isFrontLineEnterAttack;0;0x8926c24;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516f200;isFrontLineEnterView;0;0x8926d60;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516f300;isPossibleExecHeroMode;0;0x8926eb8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516f400;getFrontLinePosition;0;0x8926f90;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516f500;setUnitCtrlMoveEnable;0;0x8927028;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+2516f600;setVersusString;0;0x89270e4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_P;Jump destination;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6
+2516f700;dispSetVersusString;0;0x8927510;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+2516f800;isVisibleVersusString;0;0x8927684;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+2516f900;sendVersus04PanelAction;0;0x8924b98;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+2516fa00;receiveVersus04PanelAction;0;0x8924cf8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6
+2516fb00;getVersus04PanelActionCount;0;0x8924e88;uint32_t_T1;Pointer 0
+2516fc00;clearVersus04PanelActionCount;0;0x8924ef8
+2516fd00;sendVersus04PanelSwapRandom;0;0x89250b0;uint32_t_T1;Pointer 0
+2516fe00;receiveVersus04PanelSwap;0;0x8924f24
+2516ff00;isUpdateVersus04PanelSwap;0;0x8925034;uint32_t_T1;Pointer 0
+25160001;getQuestType;0;0x89280f8;uint32_t_T1;Pointer 0
+25160101;setUpdateDefaultCamera;0;0x8928158;uint32_t_T1;Pointer 0
+25160201;resultReadyGo;0;0x8928280
+25160301;getDeadCount;0;0x89281c0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25160401;getTroopTopPosY;0;0x8928300;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25160501;setMotionDirect;0;0x89283d4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25160601;setDefaultStageSize;0;0x8928590;uint32_t_T1;Pointer 0
+25160701;sendPlayMotion;0;0x89285ec;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25160801;getRetireFlag;0;0x8928770;uint32_t_T1;Pointer 0
+25160901;setHeroAppearPosition;0;0x89287ec;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25160a01;setNetworkLogOutputType;0;0x89289e8;uint32_t_T1;Pointer 0
+25160b01;multi_disableScore;0;0x8928a48;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25160c01;getMyselfPlayerId;0;0x8928b00;uint32_t_T1;Pointer 0
+25160d01;loadVersusDisplayCommon;0;0x8928b94
+25160e01;checkNetworkLost;0;0x8928ed0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25160f01;setTimerEnableSeType;0;0x89290f4;uint32_t_T1;Pointer 0
+25161001;setScoreDispType;0;0x8929178;uint32_t_T1;Pointer 0
+25161101;sendMessage;0;0x892920c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25161201;playHitEffect;0;0x89297d8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25161301;getSummonPlayerId;0;0x892952c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25161401;getVersusPKInfo;0;0x8929620;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25161501;getUnitWeight;0;0x89298e0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25161601;addLockdGimmick;0;0x8919528;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25161701;getForwardMissile;0;0x89299bc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25161801;startScreenFog;0;0x8929c5c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25161901;getMsgWndUseNum;0;0x8929e00;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25161a01;rebornSquad;0;0x8929eb8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25161b01;drawTimer;0;0x8929fc0;uint32_t_T1;Pointer 0
+25161c01;getCountDownTimerStatus;0;0x892a044;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25161d01;sendVersus04RequestWave;0;0x892a0fc;uint32_t_T1;Pointer 0
+25161e01;receiveVersus04RequestWave;0;0x892a18c;uint32_t_T1;Pointer 0
+25161f01;lockNotifyError;0;0x892a200;uint32_t_T1;Pointer 0
+25162001;getUnit_gamePlayerId;0;0x892a264;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25162101;checkRangePriority_setPos;0;0x892a3dc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25162201;checkRangePriority_isInside;0;0x892a470;uint32_t_T1;Pointer 0
+25162301;checkRangePriority_isInsideH;0;0x892a518;uint32_t_T1;Pointer 0
+25162401;worldToScreenPos;0;0x892a620;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25162501;replaceActivityTable;0;0x892a740;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162601;getVersus02shootingMissileCount;0;0x8927778;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25162701;sendVersus02CommonData;0;0x8927968;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162801;receiveVersus02CommonData;0;0x8927a40;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162901;initVersus02CommonData;0;0x8927b54;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162a01;getMultiPlayerLevelMax;0;0x892a824;uint32_t_T1;Pointer 0
+25162b01;sendVersus04CommonData;0;0x8927c5c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162c01;receiveVersus04CommonData;0;0x8927d34;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162d01;initVersus04CommonData;0;0x8927e40;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25162e01;getCharaBaseParamIndexId;0;0x892a97c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25162f01;setRetrogradeLimit;0;0x89238f0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25163001;setVersusStringTypeScore;0;0x892737c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6
+25163101;getVersusPlayerCount;0;0x892aa40;uint32_t_T1;Pointer 0
+25163201;setVersus03Rank;0;0x8927f40;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163301;getVersus03Rank;0;0x8927fdc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163401;setVersus03RankForce;0;0x89280a4
+25163501;getVersus04PanelCenter;0;0x8925434;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25163601;getVersus04PanelIndexFromPos;0;0x8925500;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6
+25163701;setAppearMissileInfo;0;0x892aad0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25163801;getAppearMissileType;0;0x892abcc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163901;nextAppearMissile;0;0x892ac88;uint32_t_T1;Pointer 0
+25163a01;cmdAppearMissilePoint;0;0x892ad0c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25163b01;cmdAppearMissileDeadUnitCnt;0;0x892ae4c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25163c01;isForceShootMissile;0;0x892af88;uint32_t_T1;Pointer 0
+25163d01;shootMissile;0;0x892b030;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25163e01;setDisableVersusStringRender;0;0x892b0e4;uint32_t_T1;Pointer 0
+25163f01;startIntroEvent;0;0x892b190
+25164001;getTroopHeroType;0;0x892b1b8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164101;getTroopSign;0;0x892b274;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25164201;disableEquipBigShield;0;0x892b34c;uint32_t_T1;Pointer 0
+
+sec_0x17
+25170100;dummy;0;0x8910cf0
+25170200;isEnable;0;0x8910cfc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25170300;getActorBaseInfo;0;0x8910d9c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25170400;getActorInfo;0;0x8910ebc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25170500;setActorInfo;0;0x8910f90;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25170600;setActive;0;0x8911070;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25170700;getActive;0;0x891111c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25170800;setBrakeScore;0;0x89111b8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25170900;getBrakeScore;0;0x8911378;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25170a00;getModelInfo;0;0x8911444;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25170b00;setModelInfo;0;0x8911588;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25170c00;getMotionInfo;0;0x8911878;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25170d00;setGroupId;0;0x89119b0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25170e00;flipEnable;0;0x8911a60;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25170f00;getFlipEnable;0;0x8911b74;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25171000;setFixMoveEnable;0;0x8911c60;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25171100;setMotion;0;0x8911d30;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25171200;setMoveSpeedRatio;0;0x8911eb8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25171300;setVector;0;0x8911f84;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25171400;addVector;0;0x891208c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25171500;setVectorFluctuationAngle;0;0x89121d8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25171600;setFloating;0;0x8912304;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25171700;setDecay;0;0x89123f8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25171800;setRenderPriority;0;0x8912518;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25171900;resetAttackUniqueId;0;0x89125c0;uint32_t_T1;Pointer 0
+25171a00;setLink;0;0x8912664;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;string;Text
+25171b00;setLinkParam;0;0x8912854;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6
+25171c00;addLinkObject;0;0x8912a00;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;string;Text
+25171d00;releaseLink;0;0x8912b2c;uint32_t_T1;Pointer 0
+25171e00;setMotionFrameRatio;0;0x8912ba8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25171f00;getMotionFrameRate;0;0x8912c70;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25172000;getNodeIndex;0;0x8912d40;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;string;Text
+25172100;getNodePos;0;0x8912e58;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25172200;getNodeDisp;0;0x8912f78;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25172300;setNodeDisp;0;0x8913078;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25172400;getStatusInfo;0;0x8913178;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25172500;disableKillTimer;0;0x89132a8;uint32_t_T1;Pointer 0
+25172600;kill;0;0x8913334;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25172700;killGroup;0;0x8913414;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25172800;del;0;0x89134b4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25172900;setMaxHitPoint;0;0x89135f4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25172a00;setHitPoint;0;0x89136c0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25172b00;callActorScript;0;0x891378c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25172c00;callActorEffect;0;0x89138f8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6
+25172d00;callMessageWindow;0;0x8913aa0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_P;Jump destination;uint32_t_T8;Pointer 7
+25172e00;closeMessageWindow;0;0x8913cdc;uint32_t_T1;Pointer 0
+25172f00;keyCloseMessageWindow;0;0x8913d68;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25173000;setMsgWndApproachOnScreen;0;0x8914080;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25173100;setMsgWndPriority;0;0x8914140;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25173200;setMsgWndColor;0;0x89141fc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25173300;setMsgWndMsgType;0;0x8914300;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25173400;setTimmingScript_Int;0;0x89143bc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25173500;setFogView;0;0x89144c4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25173600;setModelColor;0;0x891457c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25173700;playMotion;0;0x89146e0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25173800;pushMotion;0;0x89148f4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25173900;clipMotion;0;0x8914ac8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25173a00;stopMotion;0;0x8914c6c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25173b00;pauseMotion;0;0x8914d34;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25173c00;movePosition;0;0x8914f6c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25173d00;stopMove;0;0x8915100;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25173e00;enableCollision;0;0x89151c8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25173f00;addHit;0;0x8915308;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6
+25174000;isDamaged;0;0x8915540;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25174100;enableCollisionFlag;0;0x89155fc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5
+25174200;setCollisionSize;0;0x89157f4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25174300;getCollisionSize;0;0x8915928;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25174400;setDamageParam;0;0x8915a24;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25174500;setPushParam;0;0x8915b0c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25174600;appearItem;0;0x8915bfc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25174700;setActorLevel;0;0x8915ce0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25174800;getActorLevel;0;0x8915da4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25174900;setItemTable;0;0x8915e5c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25174a00;setLinkInfo;0;0x8915f00;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25174b00;setScale;0;0x8916008;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25174c00;getScale;0;0x89160d0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25174d00;clearAbnormalStatus;0;0x8916194;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25174e00;getAbnormalStatus;0;0x89165cc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25174f00;addAbnormalStatus;0;0x8916778;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25175000;addAbnormalStatusSlip;0;0x8916bd4;uint32_t_T1;Pointer 0
+25175100;addAbnormalStatusBlowOff;0;0x8916d98;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25175200;getChildGimmick;0;0x8916f0c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25175300;getClassType;0;0x89170b4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175400;getParent;0;0x8917170;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25175500;getCollisionType;0;0x891736c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175600;isHero;0;0x891741c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175700;isFlag;0;0x8917528;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175800;getCenterNodeId;0;0x8917648;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175900;getKillOrderFlag;0;0x8917718;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175a00;getMotionEndFrame;0;0x89177e8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175b00;addDamage;0;0x89178a8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175c00;getDamageDeadFlag;0;0x89179d4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175d00;getDirection;0;0x8917aac;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175e00;setDirection;0;0x8917b80;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25175f00;getTroopSign;0;0x8917c4c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25176000;catLink;0;0x8917d20;uint32_t_T1;Pointer 0
+25176100;allClearActorWindow;0;0x8917dbc
+25176200;callLocalizeMessageWindow;0;0x8917df0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7
+25176300;setUserFogAlpha;0;0x8918028;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25176400;enableForeverRun;0;0x891811c;uint32_t_T1;Pointer 0
+25176500;setLinkById;0;0x8912760;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25176600;setModelLowerHeight;0;0x89181d4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25176700;setBreakScoreTroop;0;0x89183b0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25176800;isMyHero;0;0x89184b4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25176900;setCanCaptureItem;0;0x89185d8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25176a00;extinctionFire;0;0x89186c0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25176b00;getSubjectHandle;0;0x891877c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25176c00;getSubjectPlayerId;0;0x8918838;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25176d00;enableDamageFlag;0;0x8918910;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25176e00;setParent;0;0x8917264;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25176f00;playSe;0;0x89189ec;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7
+25177000;getRenderPriority;0;0x8918bb8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25177100;enableRenderAttach;0;0x8918c64;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+
+sec_0x18
+25180100;dummy1;0;0x892e5ec;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25180200;dummy2;0;0x892e640;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25180300;test1;0;0x892e694;uint32_t_T1;Pointer 0
+
+sec_0x19
+25190100;gimmick_getHandle;0;0x8940e68;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25190200;setActionController;0;0x8940f00;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7
+25190300;effectGetUserId;0;0x894112c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25190400;effectSetUserId;0;0x8941224;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25190500;effectSetWaitTime;0;0x894131c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25190600;gimmickGetUserIdF;0;0x8941708;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25190700;gimmickSetUserIdF;0;0x89417f0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25190800;gimmickGetUserIdI;0;0x8941538;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25190900;gimmickSetUserIdI;0;0x8941620;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25190a00;effectsetCommonStatusParam;0;0x89418d8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25190b00;effectSetTimmingScript;0;0x89419fc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25190c00;effectHitEffectCallback;0;0x8941acc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25190d00;setWorkValue;0;0x8941c28;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25190e00;getWorkValue;0;0x8941d1c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25190f00;setUserScript;0;0x8941e14;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_P;Jump destination
+25191000;setDrawMode;0;0x8941efc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191100;effectsetDeleteId;0;0x8941fbc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191200;effectkill;0;0x894207c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191300;effectgetEffectId;0;0x89420fc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191400;getActorPhase;0;0x89421c4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191500;setModelRotate;0;0x8942314;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25191600;getGimmickId;0;0x894242c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191700;killGeneratorGroup;0;0x89424f4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25191800;setChangeAUIDTimming;0;0x89426a8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191900;setEnableNetwork;0;0x894276c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191a00;getSwitchWaitTime;0;0x8942850;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25191b00;setDisableThroughAttack;0;0x89429e8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191c00;setIsNotHitDungeon;0;0x8942ac0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191d00;setPhaseWait;0;0x89413e0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191e00;gimmickgetUnique;0;0x8942b98;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25191f00;gimmickgetFreeUnique;0;0x8942c5c;uint32_t_T1;Pointer 0
+25192000;effectSetDisableGimmickThrough;0;0x8942cd0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25192100;setRenderNoFlip;0;0x8942da8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+
+sec_0x1c
+251c0100;dummy;2;0x8b4d1f0
+251c0200;getPack;2;0x8b4d200
+251c0300;callActorScript;2;0x8b4d2a0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251c0400;setTimmingScript;2;0x8b4d3a0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c0500;setEnablePad;2;0x8b4d478;uint32_t_T1;Pointer 0
+251c0600;getAzitoInfo;2;0x8b4d560;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c0700;setAzitoInfo;2;0x8b4d7e0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c0800;getFacilityHandle;2;0x8b4d998;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c0900;getFacilityGimmickHandle;2;0x8b4da48;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c0a00;setFacilityActive;2;0x8b4daf0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c0b00;setFacilityEnableSelect;2;0x8b4dbb0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c0c00;getFacilityInfo;2;0x8b4dc50;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c0d00;setFacilityInfo;2;0x8b4dd78;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c0e00;getEventUnitHandle;2;0x8b4dec8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c0f00;getMultiEventUnitHandle;2;0x8b4dfb8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c1000;getMultiHeroHandle;2;0x8b4e0a8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c1100;setEnableSeatLight;2;0x8b4e1a0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c1200;addArea;2;0x8b4e250;uint32_t_T1;Pointer 0
+251c1300;addStage;2;0x8b4e310;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7;uint32_t_T9;Pointer 8;uint32_t_T10;Pointer 9;uint32_t_T11;Pointer 10;uint32_t_T12;Pointer 11;uint32_t_T13;Pointer 12;string;Text 1;string;Text 2;string;Text 3;string;Text 4
+251c1400;addQuest;2;0x8b4e958;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7;uint32_t_T9;Pointer 8;uint32_t_T10;Pointer 9;string;Text
+251c1500;resetStageParam;2;0x8b4ec18;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c1600;resetQuestParam;2;0x8b4ee90;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c1700;reflectQCompDataToCompData;2;0x8b4f0a8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c1800;setAsqEnable;2;0x8b4f1a0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c1900;setStageCursor;2;0x8b4f288;uint32_t_T1;Pointer 0
+251c1a00;addLevelUpItemParam;2;0x8b4f308;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c1b00;getLevelUpScriptParam;2;0x8b4f3b0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+251c1c00;getLevelUpInfo;2;0x8b4f4e8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7;uint32_t_T9;Pointer 8;uint32_t_T10;Pointer 9;uint32_t_T11;Pointer 10;uint32_t_T12;Pointer 11
+251c1d00;saveMS;2;0x8b4f790;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c1e00;getResultSaveMS;2;0x8b4f830;uint32_t_T1;Pointer 0
+251c1f00;saveActorInfo;2;0x8b4f8a8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c2000;loadActorInfo;2;0x8b4f988;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c2100;saveFacilityInfo;2;0x8b4fa60
+251c2200;loadFacilityInfo;2;0x8b4fb60
+251c2300;masterGateNextState;2;0x8b4fc80
+251c2400;cameraSetPosZ;2;0x8b4fcb8;uint32_t_T1;Pointer 0
+251c2500;getEnablePad;2;0x8b4fd40;uint32_t_T1;Pointer 0
+251c2600;startSyncGameFlag;2;0x8b4fdb0
+251c2700;getSyncGameFlagResult;2;0x8b4fe28;uint32_t_T1;Pointer 0
+251c2800;toTilte;2;0x8b4fea0
+251c2900;setShopItemInfo;2;0x8b4ff08;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c2a00;getShopItemInfo;2;0x8b4ff70;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c2b00;openAllTips;2;0x8b4ffd8
+251c2c00;networkErrorInvoke;2;0x8b50028
+251c2d00;clearVersusInfo;2;0x8b50068
+251c2e00;setChatBalloonOffset;2;0x8b50118;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c2f00;setConnectionIconDraw;2;0x8b501e8;uint32_t_T1;Pointer 0
+251c3000;makeGameCompleteSaveData;2;0x8b50248
+251c3100;notifyErrorUnknownDLCQuest;2;0x8b50588
+251c3200;getEventUnitDefaultPriority;2;0x8b506c0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c3300;getEventUnitCharaBaseParamIndexId;2;0x8b507b8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251c3400;setEnableReload;2;0x8b4d500;uint32_t_T1;Pointer 0
+251c3500;isExistDLCQuestFile;2;0x8b505d8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251c3600;setIamCheater;2;0x8b508b0
+
+sec_0x1d
+251d0100;dummy;2;0x8b68668
+251d0200;setBasesTimmingScript;2;0x8b68678;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+
+sec_0x1f
+251f0100;dummy;3;0x8b5bde0
+251f0200;create;3;0x8b5bdf0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251f0300;setMode;3;0x8b5bea0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f0400;setLevel;3;0x8b5c138;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251f0500;setPosX;3;0x8b5c208;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251f0600;setAdventRadius;3;0x8b5c2d8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251f0700;setItemTable;3;0x8b5c3a8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251f0800;setDeathCall;3;0x8b5c548;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f0900;setReqActorType;3;0x8b5c640;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;ENTITY_ID;Entity ID
+251f0a00;setReqActorCount;3;0x8b5c738;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f0b00;setReqActorTotal;3;0x8b5c830;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f0c00;setReqActorLevel;3;0x8b5c938;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f0d00;setReqActorScale;3;0x8b5ca30;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f0e00;setReqActorPos;3;0x8b5cb28;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251f0f00;setReqActorAdventRadius;3;0x8b5cc40;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251f1000;setReqActorMovePos;3;0x8b5cd58;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251f1100;setReqActorMoveRadius;3;0x8b5ce70;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251f1200;setReqActorDelayTime;3;0x8b5cf88;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f1300;spawn;3;0x8b5d830;uint32_t_T1;Pointer 0
+251f1400;getActorHandle;3;0x8b5d8d0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f1500;getHandle;3;0x8b5d9c8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251f1600;getActReqActCount;3;0x8b5da88;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f1700;setUnitCtrlMode;3;0x8b5db80;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f1800;setReqActorUniqueId;3;0x8b5d080;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f1900;setTroopType;3;0x8b5c478;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251f1a00;setReqActorFixPosFlag;3;0x8b5d178;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f1b00;setModeEx;3;0x8b5bf98;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251f1c00;setUnitCtrlActivity;3;0x8b5dc78;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251f1d00;setReqActorRenderPrio;3;0x8b5d270;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251f1e00;setUnitCtrlWatchArea;3;0x8b5e170;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f1f00;setReqActorItemTable;3;0x8b5d390;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f2000;setReqActorWeapon;3;0x8b5d488;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;EQUIP_ID;Equipment ID;uint32_t_T4;Pointer 3
+251f2100;setUnitCtrlRangerActType;3;0x8b5de88;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f2200;setUnitCtrlAttackMoveAddParam;3;0x8b5e078;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f2300;setUnitCtrlStartActType;3;0x8b5dd90;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f2400;setUnitCtrlGimmick;3;0x8b5e268;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f2500;setGimmickFlag;3;0x8b5d6e8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+251f2600;setUnitCtrlTimingScript_Int;3;0x8b5e360;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251f2700;setUnitCtrlCurrentActType;3;0x8b5df80;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f2800;setReqActorHp;3;0x8b5d5f0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f2900;setBossCtrlStaggerItem;3;0x8b5e4b8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f2a00;setUnitCtrlAdventPosX;3;0x8b5e5b0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f2b00;getUnitCtrlActivity;3;0x8b5e6a8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251f2c00;getUnitCtrlCurrentActType;3;0x8b5e7d0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f2d00;setUnitCtrlSpring;3;0x8b5e8c8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+251f2e00;setBossMoveRange;3;0x8b5e9e8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+251f2f00;setBossMoveRangeLimit;3;0x8b5eb28;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f3000;getSquadHandle;3;0x8b5ec20;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f3100;setUnitCtrlSkill;3;0x8b5ed18;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+251f3200;isActiveGen;3;0x8b5ee10;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+251f3300;setMonsterCollisionType;3;0x8b5eee0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+
+sec_0x20
+25200100;dummy;0;0x89b0e1c
+25200200;reset;0;0x89b0e28
+25200300;setPoint;0;0x89b0e64;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25200400;addPoint;0;0x89b0ee8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25200500;getId;0;0x89b0f6c;uint32_t_T1;Pointer 0
+
+sec_0x21
+25210100;dummy;0;0x89b1358
+25210200;decidedBossAction;0;0x89b1364
+25210300;enableBossManualCtrl;0;0x89b13f0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25210400;setBossActionId;0;0x89b14c8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25210500;getBossActionId;0;0x89b1598;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25210600;setBossState;0;0x89b1668;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25210700;setBossStatePhase;0;0x89b1738;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25210800;setBossTargetPos;0;0x89b1808;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25210900;setBossDisableAtkMove;0;0x89b19a8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25210a00;setBossMoveRange;0;0x89b29f4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25210b00;getBossMoveRange;0;0x89b2acc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25210c00;setBossMoveRangeLimit;0;0x89b2ba8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25210d00;getBossMoveRangeLimit;0;0x89b2c38;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25210e00;setBossRetreatPos;0;0x89b18d8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25210f00;setBossNoDamage;0;0x89b1a7c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25211000;getBossInfo;0;0x89b1b5c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7;uint32_t_T9;Pointer 8;uint32_t_T10;Pointer 9;uint32_t_T11;Pointer 10;uint32_t_T12;Pointer 11;uint32_t_T13;Pointer 12;uint32_t_T14;Pointer 13;uint32_t_T15;Pointer 14;uint32_t_T16;Pointer 15;uint32_t_T17;Pointer 16;uint32_t_T18;Pointer 17;uint32_t_T19;Pointer 18;uint32_t_T20;Pointer 19;uint32_t_T21;Pointer 20;uint32_t_T22;Pointer 21;uint32_t_T23;Pointer 22;uint32_t_T24;Pointer 23;uint32_t_T25;Pointer 24;uint32_t_T26;Pointer 25;uint32_t_T27;Pointer 26;uint32_t_T28;Pointer 27;uint32_t_T29;Pointer 28;uint32_t_T30;Pointer 29;uint32_t_T31;Pointer 30;uint32_t_T32;Pointer 31;uint32_t_T33;Pointer 32
+25211100;getBossInfo2;0;0x89b24e8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7;uint32_t_T9;Pointer 8;uint32_t_T10;Pointer 9;uint32_t_T11;Pointer 10;uint32_t_T12;Pointer 11;uint32_t_T13;Pointer 12;uint32_t_T14;Pointer 13;uint32_t_T15;Pointer 14;uint32_t_T16;Pointer 15
+25211200;setBossInfo;0;0x89b1ff0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4;uint32_t_T6;Pointer 5;uint32_t_T7;Pointer 6;uint32_t_T8;Pointer 7;uint32_t_T9;Pointer 8;uint32_t_T10;Pointer 9;uint32_t_T11;Pointer 10;uint32_t_T12;Pointer 11;uint32_t_T13;Pointer 12;uint32_t_T14;Pointer 13;uint32_t_T15;Pointer 14;uint32_t_T16;Pointer 15;uint32_t_T17;Pointer 16;uint32_t_T18;Pointer 17;uint32_t_T19;Pointer 18;uint32_t_T20;Pointer 19;uint32_t_T21;Pointer 20;uint32_t_T22;Pointer 21;uint32_t_T23;Pointer 22;uint32_t_T24;Pointer 23;uint32_t_T25;Pointer 24;uint32_t_T26;Pointer 25;uint32_t_T27;Pointer 26;uint32_t_T28;Pointer 27;uint32_t_T29;Pointer 28;uint32_t_T30;Pointer 29;uint32_t_T31;Pointer 30;uint32_t_T32;Pointer 31;uint32_t_T33;Pointer 32;uint32_t_T34;Pointer 33
+25211300;getBossIsCreate;0;0x89b2754;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25211400;callBossRetreatEndInit;0;0x89b283c;uint32_t_T1;Pointer 0
+25211500;getBossAttackMoveRange;0;0x89b28ac;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25211600;getBossDisableAtkMove;0;0x89b2968;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25211700;setCollisionNotHitTroopP;0;0x89b2cc8;uint32_t_T1;Pointer 0
+25211800;setCapture;0;0x89b2d38;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25211900;addVecTroopP;0;0x89b2e4c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25211a00;addAbnormalTroopP;0;0x89b30c0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25211b00;setMotion;0;0x89b31c4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25211c00;setSyncValue;0;0x89b32f0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25211d00;getSyncValue;0;0x89b33a4;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3
+25211e00;appearStaggerItems;0;0x89b3484;uint32_t_T1;Pointer 0
+25211f00;appearDeadItems;0;0x89b34ec;uint32_t_T1;Pointer 0
+25212000;resetAbnormal;0;0x89b3554;uint32_t_T1;Pointer 0
+25212100;resetObject;0;0x89b35c4;uint32_t_T1;Pointer 0
+25212200;setDead;0;0x89b362c;uint32_t_T1;Pointer 0
+25212300;deadExit;0;0x89b36a4;uint32_t_T1;Pointer 0
+25212400;setEnableAbnormalWhole;0;0x89b370c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25212500;setDisableAbnormal;0;0x89b379c;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25212600;resetCollisionShapeBox;0;0x89b3928;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2;uint32_t_T4;Pointer 3;uint32_t_T5;Pointer 4
+25212700;getSoundCommandID;0;0x89b3a74;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25212800;setEnableQuickMotionMode;0;0x89b3b04;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25212900;addCancelMotion;0;0x89b3b98;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25212a00;setDelete;0;0x89b3c4c;uint32_t_T1;Pointer 0
+25212b00;sendMonsterInfoAction;0;0x89b3cb8;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25212c00;recvMonsterInfoAction;0;0x89b3d48;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25212d00;sendMonsterInfoState;0;0x89b3e08;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25212e00;recvMonsterInfoState;0;0x89b3e98;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25212f00;unitUidToSquadHandle;0;0x89b3f34;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25213000;squadHandleToUnitUid;0;0x89b3fdc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25213100;setSBossGimmickCheck;0;0x89b4074;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25213200;setSBossMoveRangeCheck;0;0x89b4118;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25213300;setActivityParam;0;0x89b41bc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25213400;obstacleClear;0;0x89b4254;uint32_t_T1;Pointer 0
+25213500;obstacleCreateEffect;0;0x89b42e0;uint32_t_T1;Pointer 0
+25213600;obstacleCheckEndMove;0;0x89b4350;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25213700;obstacleGetMoveRatio;0;0x89b43ec;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1;uint32_t_T3;Pointer 2
+25213800;setWakeUpType;0;0x89b44b0;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25213900;wakeUpForce;0;0x89b4580;uint32_t_T1;Pointer 0
+25213a00;setDisableSelectAction;0;0x89b4628;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
+25213b00;getBossState;0;0x89b46fc;uint32_t_T1;Pointer 0;uint32_t_T2;Pointer 1
